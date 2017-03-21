@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录聚美</title>
+
+<link rel="stylesheet" href="common-2.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="jumei_sign-1.css"  type="text/css" media="screen" charset="utf-8" />
+</head>
+
+</head>
+
+<body>
+
+<style>
+    .top_nav_hot{ position: absolute;left:81px;top:-4px;}
+</style> 
+<div id="header_container">
+    <div id="logo">
+        <a href="" id="home" title="聚美优品" style="background:url(../image/logo_new_v1-1.jpg ) no-repeat top left"></a>
+        <div class="header_logo_box">
+            <a href="" class="top_link lightning" target="_blank"></a>
+            <a href="" rel="nofollow" class="top_link gild" target="_blank"></a>
+            <a href="" rel="nofollow" class="top_link credit" target="_blank"></a>
+        </div>
+    </div>
+</div>
+<link href="login-2.css" rel="stylesheet"/>
+
+<style>
+    .loginWrap .loginBord {
+        width: 300px;
+    }
+    #username, #login_password, #dynamic_mobile {
+        padding-left: 38px;
+        width: 252px;
+    }
+
+    .dynamic_pass input {
+        width: 88px;
+        display: inline-block;
+    }
+
+    .phonecode {
+        width:130px;
+    }
+
+    .gt_guide_tip {
+        left: 40px!important;
+    }
+    .iconAccout a {
+        margin-right: 10px;
+    }
+    .textBtnsWrap {
+        background-color: #F4F6F4;
+    }
+    .t_v_txt_btn {
+        width: 49px !important;
+    }
+
+</style>
+<div class="sign">
+    <div class="loginWrap">
+        <div class="loginBoardWrap">
+            <div class="loginImage"></div>
+            <div class="loginBord">
+                <div class="loginTit">
+                    <div class="tosignup">还没有聚美账号？<a href="register.htm">30秒注册</a></div>
+                    <h1><strong>聚美优品</strong></h1>
+                </div>
+                <form id="login-user-form" method="post" action="../../../action.php?a=login">
+                    <!-- <input style="display:none" type="text" name="username"/>
+                    <input style="display:none" type="password" name="pwd"/> -->
+                    <div class="textbox_ui user">
+                        <input type="text" placeholder="请输入用户名" id="username" name="username" autofocus autocomplete="off" value="">
+                        <div class="focus_text">5-10个字符，可使用字母、数字、下划线，需以字母开头</div>
+                        <div class="invalid">
+                            <i></i>
+                            <div class="msg"></div>
+                        </div>
+                    </div>
+                    <div class="textbox_ui pass">
+                        <input type="password" placeholder="密码" id="login_password" autocomplete="off" name="pwd">
+                        <div class="focus_text">请输入您的密码，密码5-12位,密码可能为字母、数字或符号的组合</div>
+                    </div>
+                    <div class="textbox_ui yzm" style="width:300px;height:30px;margin:0px;">
+	                    <input  type="text" placeholder="请输入验证码" name="yzm" class="textbox_ui yzm_font" style="width:140px;height:21px;padding:10px;margin-right:10px;margin-bottom:0px;float:left;border:1px border-color:#CFCFCF">
+	                    
+	                    <div class="textbox_ui yzm_box" style="float:right;margin-bottom:5px;"><img onclick="this.src='../Public/yzm.php?'+Math.random()" src="../Public/yzm.php" width="125" height="40" />
+	                	</div>
+ 					</div>
+ 					
+					<p><label><input type="checkbox" id="auto_login" checked value="">自动登录</label></p>
+
+                    <input class="loginbtn submit_btn" type="submit" value="登录" style=" display: block;width: 100%;">
+                    <div id="errorMsg"></div>
+                </form>
+                <div class="iconAccout" >
+                    <div>你也可以使用以下帐号登录</div>
+                    <p>
+                        <a href="" class="a1" title="QQ">QQ</a>
+                        <a href="" class="a2" title="支付宝">支付宝</a>
+                        <a href="" class="a3" title="微博">微博</a>
+                        <a href="" class="a4" title="360">360</a>
+                        <a href="" class="a5" title="百度">百度</a>
+                </div>
+                <div class="shadow_l"></div>
+                <div class="shadow_r"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer_container" class="footer_white" style="padding-top:5px;background:none;border-top: none;">
+    <div class="footer_con" id="footer_copyright">
+        <p class="footer_copy_con">
+            Copyright &copy; 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888<br/>
+            京公网安备 11010102001226 号 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow"> 京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
+            | 营业执照
+        </p>
+        <p>
+            <a href="" class="footer_copy_logo logo01" rel="nofollow"></a>
+            <a href="https://www.itrust.org.cn" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+            <a href="" class="footer_copy_logo logo03" rel="nofollow"></a>
+            <a href="" class="footer_copy_logo logo04" rel="nofollow"></a>
+            <a href="https://ss.cnnic.cn/" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

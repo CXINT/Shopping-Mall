@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>注册-聚美账户</title>
+    <link rel="stylesheet" href="common-1.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="jumei_sign-1.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body>
+    <style>
+        .top_nav_hot{ position: absolute;left:81px;top:-4px;}
+    </style>
+    <!-- 页面头部开始 -->
+    <div id="header_container">
+        <div id="logo">
+            <a href="http://www.jumei.com" id="home" title="聚美优品" style="background:url(../image/logo_new_v1-1.jpg ) no-repeat top left;"></a>
+            <div class="header_logo_box">
+                <a href="" rel="nofollow" class="top_link lightning" target="_blank"></a>
+                <a href="" rel="nofollow" class="top_link gild" target="_blank"></a>
+                <a href="" rel="nofollow" class="top_link credit" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面头部结束 -->
+    <link href="signup.css" rel="stylesheet"/>
+
+    <!-- 页面中间部分开始 -->
+    <div class="sign">
+        <div class="loginWrap">
+            <div class="loginPic ">
+                <a href="" target="_blank" class="signup_link"></a>
+                <div class="loginBord" style="height:500px">
+                    <div class="loginTit">
+                        <div class="tosignup">已有账号<a href="./login.htm">在此登录</a></div>
+                        <h1><strong>用户注册</strong></h1>
+                    </div>
+                    <!-- 表单开始 -->
+                    <form id="phone" method="post" action="./register_action.php?a=add" />
+                        <!-- 用户名输入框 -->
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="text" id="mobile" name="username" placeholder="用户名" autofocus autocomplete="off" value="" >
+                                <div class="focus_text">5-10个字符,可使用字母、数字、下划线组合,以字母开头</div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                                <i class="valid"></i>
+                                <i class="loading"></i>
+                            </div>
+                        </div>
+                        <div class="line verityWrap imgVerifyWrap" data-required="no" style="display:none">
+                                <div class="textbox_ui">
+                                <input type="text" placeholder="" id="verify_code" autocomplete="off">
+                                <div class="focus_text"></div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line verityWrap">
+                        <!-- 密码输入框 -->
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="password" id="password" name="pwd"  placeholder="密码" autocomplete="off" style="width:284px">
+                                <div class="focus_text" >
+                                    <p class="default">5-12个字符，建议使用字母加数字或符号组合</p>
+                                    <div class="safe">
+                                        <div class="pw_isstrong clearfix">
+                                            <div class="pw_level pw_success" data-class="pw_weak" data-strength="weak">å¼±</div>
+                                            <div class="pw_level pw_success" data-class="pw_normal" data-strength="normal">ä¸­</div>
+                                            <div class="pw_level pw_success" data-class="pw_strong" data-strength="strong" style="border-right:0">å¼º</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="valid"></i>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第二次密码确认框 -->
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="password" id="password2"  name="pwd2" placeholder="重复密码" autocomplete="off" style="width:284px">
+                                <div class="focus_text">请再次输入密码</div>
+                                <i class="valid"></i>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 手机号码输入框 -->
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="text" id="mobile"  name="phone" placeholder="手机号" autofocus autocomplete="off" value="" style="width:284px">
+                                <div class="focus_text">请输入11位手机号</div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                                <i class="valid"></i>
+                                <i class="loading"></i>
+                            </div>
+                        </div>
+                        <div class="line verityWrap imgVerifyWrap" data-required="no" style="display:none">
+                                <div class="textbox_ui">
+                                <input type="text" placeholder="" id="verify_code" autocomplete="off">
+                                <div class="focus_text"></div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- QQ号输入框 -->
+                        <div class="line">
+                            <div class="textbox_ui">
+                                <input type="text" id="mobile"  name="qq" placeholder="QQ号" autofocus autocomplete="off" value="" style="width:284px">
+                                <div class="focus_text">请输入10位的QQ号</div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                                <i class="valid"></i>
+                                <i class="loading"></i>
+                            </div>
+                        </div>
+                        <div class="line verityWrap imgVerifyWrap" data-required="no" style="display:none">
+                                <div class="textbox_ui">
+                                <input type="text" placeholder="" id="verify_code" autocomplete="off">
+                                <div class="focus_text"></div>
+                                <div class="invalid">
+                                    <i></i>
+                                    <div class="msg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 按钮 -->
+                        <div class="act" style="margin-left: 0px;">
+                            <p>
+                                <input type="submit" class="submit_btn" value="同意协议并注册" name="mobileCommit" style="width: 100%;">
+                                <a href="" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美优品用户协议》</a>
+                            </p>
+                        </div>
+                        <br />
+                    </form>
+                    <!-- 表单结束 -->
+                    <!-- 表单左侧边阴影 -->
+                    <div class="shadow_l"></div>
+                    <!-- 表单右侧边阴影 -->
+                    <div class="shadow_r"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面中间部分结束 -->
+
+    <!-- 清空样式 -->
+    <div class="clear"></div>
+
+    <!-- 页面底部开始 -->
+    <div id="footer_container" class="footer_white" style="padding-top:5px;background: none;border-top: none;">
+        <div class="footer_con" id="footer_copyright">
+            <p class="footer_copy_con">
+                Copyright &copy; 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888<br/>
+                京公网安备 11010102001226 号 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow"> 京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
+                | 营业执照
+            </p>
+            <p>
+                <a href="" class="footer_copy_logo logo01" rel="nofollow"></a>
+                <a href="https://www.itrust.org.cn" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo03" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo04" rel="nofollow"></a>
+                <a href="https://ss.cnnic.cn/" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+        </div>
+    </div>
+    <!-- 页面底部结束 -->
+</body>
+</html>
